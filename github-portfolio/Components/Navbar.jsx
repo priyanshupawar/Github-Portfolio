@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import {
   Box,
   Flex,
@@ -42,6 +43,9 @@ export default function Navbar() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box>Priyanshu Pawar</Box>
 
+          <Button>Projects</Button>
+          <Button>Experinces</Button>
+
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Button onClick={toggleColorMode}>
@@ -58,7 +62,9 @@ export default function Navbar() {
                 >
                   <Avatar
                     size={"sm"}
-                    src={"https://avatars.dicebear.com/api/male/username.svg"}
+                    src={
+                      "https://avatars.githubusercontent.com/u/103637457?v=4"
+                    }
                   />
                 </MenuButton>
                 <MenuList alignItems={"center"}>
@@ -66,18 +72,19 @@ export default function Navbar() {
                   <Center>
                     <Avatar
                       size={"2xl"}
-                      src={"https://avatars.dicebear.com/api/male/username.svg"}
+                      src={
+                        "https://avatars.githubusercontent.com/u/103637457?v=4"
+                      }
                     />
                   </Center>
                   <br />
                   <Center>
-                    <p>Username</p>
+                    <p>Priyanshu Pawar</p>
                   </Center>
                   <br />
                   <MenuDivider />
-                  <MenuItem>Your Servers</MenuItem>
-                  <MenuItem>Account Settings</MenuItem>
-                  <MenuItem>Logout</MenuItem>
+                  <MenuItem>Projects</MenuItem>
+                  <MenuItem>Experiences</MenuItem>
                 </MenuList>
               </Menu>
             </Stack>
